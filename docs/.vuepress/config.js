@@ -1,13 +1,35 @@
 module.exports = {
-    // base: '/jdeduq.github.io/',
-    title: 'JDEduQ',
-    description: 'Ressources technologiques pour enseignants',
+
+    locales: {
+      '/': {
+        lang: 'fr-CA',
+        title: 'EDU JD',
+        description: 'Ressources technologiques pour enseignants'
+      },
+      '/en/': {
+        lang: 'en-US',
+        title: 'EDU JD',
+        description: 'Technological ressources for teachers'
+      }
+    },
+  
     themeConfig: {
-        // logo: '/assets/img/jdeduq-logo.png',
-        nav: [
-            { text: 'Mots croisés', link: '/motscroises/' },
-            { text: 'Google Sheets', link: '/sheets/' },
-            { text: 'Google Forms', link: '/forms/' },
-        ]
+        search: false,
+        locales: {
+            '/': {
+                nav: [
+                    { text: 'Mots croisés', link: '/motscroises/' },
+                    { text: 'Google Sheets', link: '/sheets/' },
+                    { text: 'Google Forms', link: '/forms/' },
+                ]
+            },
+            '/en/': {
+                nav: [
+                    { text: 'Crosswords', link: '/motscroises/' },
+                    { text: 'Google Sheets', link: '/sheets/' },
+                    { text: 'Google Forms', link: '/forms/' },
+                ]
+            }
+        }
     }
 }
